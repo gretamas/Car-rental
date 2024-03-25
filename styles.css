@@ -1,0 +1,192 @@
+.map-section__description .cars-btn, .map-section__description .get-btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  width: 100px;
+}
+.map-section__description .cars-btn:hover, .map-section__description .get-btn:hover {
+  transform: scale(1.08);
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.8rem;
+  background-color: none;
+  margin: 35px 0px;
+}
+.main-navigation img {
+  height: 2.5rem;
+  padding: 10px;
+}
+
+.pages-navigation {
+  display: flex;
+  align-items: center;
+}
+.pages-navigation .logo-container {
+  display: none;
+  height: 2.8rem;
+}
+.pages-navigation .logo-container .logo {
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #F55757;
+  cursor: pointer;
+}
+.pages-navigation .logo-container .logo:hover {
+  transform: scale(1.08);
+}
+.pages-navigation ul {
+  list-style: none;
+}
+.pages-navigation ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px;
+}
+.pages-navigation ul li a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #404040;
+}
+.pages-navigation ul li:hover {
+  background-color: #F55757;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+@media (max-width: 850px) {
+  .pages-navigation ul {
+    display: none;
+  }
+  .pages-navigation .logo-container {
+    display: block;
+    float: left;
+  }
+  .pages-navigation ul {
+    position: fixed;
+    color: #F55757;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+  }
+  .pages-navigation ul:hover {
+    display: block;
+  }
+  .pages-navigation ul li {
+    display: block;
+    text-align: center;
+    height: 42px;
+  }
+  .pages-navigation .logo-container:hover ~ ul {
+    display: block;
+  }
+}
+
+.map-section {
+  margin-top: 290px;
+  width: 100%;
+}
+
+.map-section__description {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  z-index: 3;
+  position: absolute;
+  margin-left: 10vw;
+}
+.map-section__description h2 {
+  width: 50vw;
+  color: #404040;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.map-section__description p {
+  width: 50vh;
+  color: #737373;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.map-section__description .map-section__description-btns {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.map-section__description .get-btn {
+  background-color: #F55757;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+.map-section__description .cars-btn {
+  border: 1px solid #F55757;
+  color: #F55757;
+  padding: 9px;
+  background-color: white;
+}
+
+.map-section__img {
+  position: relative;
+  z-index: 0;
+  margin-left: 38vw;
+  margin-right: 0vw;
+}
+.map-section__img .map-section__img-map {
+  position: absolute;
+  z-index: 0;
+}
+.map-section__img .map-section__img-pin1 {
+  position: absolute;
+  top: 123px;
+  left: 460px;
+}
+.map-section__img .map-section__img-pin2 {
+  position: absolute;
+  top: 143px;
+  left: 651px;
+}
+.map-section__img .map-section__img-pin3 {
+  position: absolute;
+  top: 73px;
+  left: 739px;
+}
+.map-section__img .map-section__img-vector1 {
+  position: absolute;
+  top: 108.05px;
+  left: 468px;
+}
+.map-section__img .map-section__img-vector2 {
+  position: absolute;
+  top: 98px;
+  left: 660px;
+}
+.map-section__img .map-section__img-car {
+  z-index: 2;
+  position: absolute;
+  top: 165px;
+  left: -100px;
+}
+
+@media (max-width: 850px) {
+  .map-section__img {
+    margin-left: 0px;
+  }
+  .map-section__description {
+    margin-top: 0vw;
+    z-index: 10;
+    width: 50vw;
+  }
+  .map-section__description h2 {
+    font-size: 3rem;
+  }
+  .map-section__img-car {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
