@@ -1,0 +1,255 @@
+.map-section__description .get-btn, .map-section__description .cars-btn, .booking-section button, .car-selection button {
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  width: 100px;
+  padding: 10px;
+  border: none; }
+  .map-section__description .get-btn:hover, .map-section__description .cars-btn:hover, .booking-section button:hover, .car-selection button:hover {
+    transform: scale(1.08); }
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.8rem;
+  background-color: none;
+  margin: 35px 0px; }
+  .main-navigation img {
+    height: 2.5rem;
+    padding: 10px; }
+
+.pages-navigation {
+  display: flex;
+  align-items: center; }
+  .pages-navigation .logo-container {
+    display: none;
+    height: 2.8rem; }
+    .pages-navigation .logo-container .logo {
+      font-size: 2.5rem;
+      padding: 10px;
+      color: #f55757;
+      cursor: pointer; }
+      .pages-navigation .logo-container .logo:hover {
+        transform: scale(1.08); }
+  .pages-navigation ul {
+    list-style: none; }
+    .pages-navigation ul li {
+      display: inline-block;
+      margin: 0 25px;
+      padding: 10px; }
+      .pages-navigation ul li a {
+        font-family: "Lato", sans-serif;
+        font-weight: 400px;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #404040; }
+      .pages-navigation ul li:hover {
+        background-color: #f55757;
+        opacity: 0.8;
+        border-radius: 8px; }
+  @media (max-width: 850px) {
+    .pages-navigation ul {
+      display: none; }
+    .pages-navigation .logo-container {
+      display: block;
+      float: left; }
+    .pages-navigation ul {
+      position: fixed;
+      color: #f55757;
+      top: 80px;
+      right: 0px;
+      width: 100%; }
+      .pages-navigation ul:hover {
+        display: block; }
+      .pages-navigation ul li {
+        display: block;
+        text-align: center;
+        height: 42px; }
+    .pages-navigation .logo-container:hover ~ ul {
+      display: block; } }
+
+.map-section {
+  width: 100%; }
+
+.map-section__description {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  z-index: 3;
+  position: absolute;
+  margin-left: 10vw; }
+  .map-section__description h2 {
+    width: 50vw;
+    color: #404040;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 4rem; }
+  .map-section__description p {
+    width: 50vh;
+    color: #737373;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem; }
+  .map-section__description .map-section__description-btns {
+    display: flex;
+    column-gap: 25px; }
+  .map-section__description .get-btn {
+    background-color: #f55757;
+    color: white;
+    border: none; }
+  .map-section__description .cars-btn {
+    border: 1px solid #f55757;
+    color: #f55757;
+    padding: 9px;
+    background-color: white; }
+
+.map-section__img {
+  position: relative;
+  z-index: 0;
+  margin-left: 38vw;
+  margin-right: 0vw; }
+  .map-section__img .map-section__img-map {
+    position: relative;
+    z-index: 0; }
+  .map-section__img .map-section__img-pin1 {
+    position: absolute;
+    top: 123px;
+    left: 460px; }
+  .map-section__img .map-section__img-pin2 {
+    position: absolute;
+    top: 143px;
+    left: 651px; }
+  .map-section__img .map-section__img-pin3 {
+    position: absolute;
+    top: 73px;
+    left: 739px; }
+  .map-section__img .map-section__img-vector1 {
+    position: absolute;
+    top: 108.05px;
+    left: 468px; }
+  .map-section__img .map-section__img-vector2 {
+    position: absolute;
+    top: 98px;
+    left: 660px; }
+  .map-section__img .map-section__img-car {
+    z-index: 2;
+    position: absolute;
+    top: 165px;
+    left: -80px; }
+
+@media (max-width: 850px) {
+  .map-container {
+    position: relative;
+    height: 250px; }
+    .map-container .map-section__img-map {
+      position: absolute;
+      left: 20%;
+      transform: translateX(-50%);
+      max-width: 150%; }
+  .map-section__description {
+    margin-top: 0vw;
+    z-index: 1;
+    width: 50vw; }
+    .map-section__description h2 {
+      font-size: 3rem;
+      width: 90vw; }
+    .map-section__description p {
+      width: 90vw; }
+  .map-section__img-car,
+  .map-section__img-pin1,
+  .map-section__img-pin2,
+  .map-section__img-pin3,
+  .map-section__img-vector1,
+  .map-section__img-vector2 {
+    display: none; } }
+
+.booking-section {
+  margin: 75px auto 50px;
+  width: 70%; }
+  .booking-section .booking-form__name {
+    width: fit-content;
+    padding: 15px 20px;
+    color: #f55757;
+    font-family: "Lato", sans-serif;
+    font-weight: 400px;
+    background-color: #fee7e7;
+    border: none; }
+  .booking-section form {
+    border: 1px solid black;
+    width: fit-content;
+    font-family: "Lato", sans-serif;
+    font-weight: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px; }
+    .booking-section form label {
+      color: #404040;
+      display: block;
+      padding: 10px 10px 10px 0px; }
+    .booking-section form div {
+      margin-left: 20px; }
+  .booking-section select,
+  .booking-section input {
+    appearance: none;
+    border: none;
+    color: lightgrey;
+    padding: 10px; }
+  .booking-section button {
+    color: white;
+    background-color: #f55757;
+    margin: 25px; }
+  @media (max-width: 850px) {
+    .booking-section form div {
+      width: 100%;
+      margin-left: 15vw; }
+    .booking-section form button {
+      margin-left: 17vw; } }
+
+.car-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .car-logo img {
+    height: 6vh;
+    opacity: 0.3; }
+  @media (max-width: 850px) {
+    .car-logo img {
+      height: 4vh; } }
+
+.car-selection {
+  margin: 50px 25px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400px; }
+  .car-selection button {
+    background-color: #f55757;
+    color: white;
+    border: none; }
+  .car-selection h2 {
+    color: #737373;
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+  .car-selection p {
+    color: lightgrey;
+    margin-bottom: 40px; }
+  .car-selection .car-selection__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .car-selection .car-selection__cards .cards-container__description {
+      margin-top: 25px; }
+      .car-selection .car-selection__cards .cards-container__description h4 {
+        color: #737373;
+        font-size: 1.5rem; }
+      .car-selection .car-selection__cards .cards-container__description p {
+        font-size: 0.8rem;
+        display: inline-block;
+        margin: 15px; }
+      .car-selection .car-selection__cards .cards-container__description a {
+        display: block; }
+      .car-selection .car-selection__cards .cards-container__description button {
+        width: 15vw; }
+  .car-selection .see-all__btn button {
+    margin-top: 50px; }
