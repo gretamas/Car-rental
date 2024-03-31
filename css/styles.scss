@@ -75,7 +75,7 @@ $baseMargin: 25px;
       }
     }
   }
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     ul {
       display: none;
     }
@@ -111,6 +111,7 @@ $baseMargin: 25px;
 
 .map-section {
   width: 100%;
+  z-index: 0;
 }
 
 .map-section__description {
@@ -206,7 +207,7 @@ $baseMargin: 25px;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   .map-container {
     position: relative;
     height: 250px;
@@ -220,7 +221,7 @@ $baseMargin: 25px;
   }
 
   .map-section__description {
-    margin-top: 0vw;
+    margin: 10vw;
     z-index: 1;
     width: 50vw;
 
@@ -296,10 +297,6 @@ $baseMargin: 25px;
       width: 100%;
       margin-left: 15vw;
     }
-
-    form button {
-      margin-left: 17vw;
-    }
   }
 }
 
@@ -312,7 +309,7 @@ $baseMargin: 25px;
     height: 6vh;
     opacity: 0.3;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 1000px) {
     img {
       height: 4vh;
     }
@@ -364,14 +361,26 @@ $baseMargin: 25px;
       a {
         display: block;
       }
-
-      button {
-        width: 15vw;
-      }
     }
   }
 
   .see-all__btn button {
     margin-top: $baseMargin * 2;
+  }
+}
+
+.services-content {
+  overflow: hidden;
+
+  picture img{
+    filter: grayscale(99%);
+    opacity: 0.3;
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
